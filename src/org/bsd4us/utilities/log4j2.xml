@@ -1,0 +1,14 @@
+<Configuration status="WARN">
+	<Appenders>
+		<File name="file" fileName="CHANGEME/.chokepoint/cp.log" />
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="WARN">
+			<AppenderRef ref="file" level="WARN" />
+			<AppenderRef ref="STDOUT" level="WARN" />
+		</Root>
+	</Loggers>
+</Configuration>
